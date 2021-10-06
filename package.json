@@ -4,12 +4,16 @@
   "description": "MERN shopping cart app",
   "main": "server.js",
   "dependencies": {
+    "axios": "^0.22.0",
     "express": "^4.17.1",
     "react-bootstrap": "^1.6.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server"
+    "start": "node server/server",
+    "server": "nodemon server/server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/mattalanhoward/udemy-proshop/issues"
   },
-  "homepage": "https://github.com/mattalanhoward/udemy-proshop#readme"
+  "homepage": "https://github.com/mattalanhoward/udemy-proshop#readme",
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.13"
+  }
 }
