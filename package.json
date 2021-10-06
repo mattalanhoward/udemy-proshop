@@ -1,0 +1,24 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react-bootstrap": "^1.6.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattalanhoward/udemy-proshop.git"
+  },
+  "author": "Matthew Howard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattalanhoward/udemy-proshop/issues"
+  },
+  "homepage": "https://github.com/mattalanhoward/udemy-proshop#readme"
+}
